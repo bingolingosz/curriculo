@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - main
+
+name: 🚀 Deploy aplicação Hostgator 
+jobs:
+
+  deploy-infinity:
+    name: 🎉 Deploy InfinityFree
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ftpupload.net
+        username: if0_38143329
+        password: mNfvJIcbQc
+        local-dir: ./  # pasta local
+        server-dir: /htdocs/  # destino  
