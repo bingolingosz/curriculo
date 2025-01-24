@@ -22,13 +22,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Kross Template v1.0">
-  
+
   <!-- theme meta -->
   <meta name="theme-name" content="kross" />
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  
+
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -42,7 +42,7 @@
 
 </head>
 <body>
-  
+
 
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -323,69 +323,8 @@
 </section>
 <!-- /services -->
 
-<!-- portfolio -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Portfolio</h2>
-      </div>
-    </div>
-    <div class="row shuffle-wrapper">
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /portfolio -->
+{{-- importa o contéudo da página --}}
+@include('paginas.portfolio')
 
 <!-- testimonial -->
 <section class="section bg-primary position-relative testimonial-bg-shapes">
