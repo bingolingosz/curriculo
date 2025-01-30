@@ -19,8 +19,9 @@ class CreatePortfoliosTable extends Migration
             # string 255 / text 65535 / longtext 4294967295 4GB
             $table->string('titulo')->unique();
             $table->string('descricao')->nullable(); # campo opcional
-            $table->string('sobre')->nullable(); # campo opcional
+            $table->longText('sobre')->nullable(); # campo opcional
             $table->string('imagem')->nullable(); # campo opcional
+            $table->integer('tipo')->default(1); # 1=web / 2=sistema
             $table->timestamps();
         });
     }

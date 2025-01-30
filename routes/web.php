@@ -9,3 +9,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+# Rota para o cadastro de projetos
+# 'caminho','função'
+Route::get( '/portfolio',function(){
+    return view('paginas.cadastra_portfolio');
+} );
